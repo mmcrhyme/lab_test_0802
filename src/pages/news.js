@@ -102,7 +102,7 @@ const items = [
     
     return (
       <div>
-        <img className="w-1/4 h-1/4" src="/logo.png" alt="logo" />
+        <Image className="w-1/4 h-1/4" src="/logo.png" alt="logo" />
         <Slider {...settings}>
             {items && items.map(item => {
                 return (
