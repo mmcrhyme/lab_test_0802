@@ -106,7 +106,7 @@ const items = [
         <Slider {...settings}>
             {items && items.map(item => {
                 return (
-                    <img className="w-1/4 h-1/4 m-5" src={item.img} />
+                    <Image className="w-1/4 h-1/4 m-5" src={item.img} />
                 )
             })}
         </Slider>
