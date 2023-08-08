@@ -102,11 +102,11 @@ const items = [
     
     return (
       <div>
-        <Image className="w-1/4 h-1/4" src="/logo.png" alt="logo" />
+        <img className="w-1/4 h-1/4" src="/logo.png" alt="logo" />
         <Slider {...settings}>
             {items && items.map(item => {
                 return (
-                    <Image className="w-1/4 h-1/4 m-5" src={item.img} />
+                    <img className="w-1/4 h-1/4 m-5" src={item.img} />
                 )
             })}
         </Slider>
