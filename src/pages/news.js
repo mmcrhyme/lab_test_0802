@@ -3,7 +3,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from 'next/image';
 
 const news = () => {
   const settings = {
@@ -103,11 +102,11 @@ const items = [
     
     return (
       <div>
-        <Image className="w-1/4 h-1/4" src="/logo.png" alt="logo" />
+        <img className="w-1/4 h-1/4" src="/logo.png" alt="logo" />
         <Slider {...settings}>
             {items && items.map(item => {
                 return (
-                    <Image className="w-1/4 h-1/4 m-5" src={item.img} alt={item.title} />
+                    <img className="w-1/4 h-1/4 m-5" src={item.img} />
                 )
             })}
         </Slider>
